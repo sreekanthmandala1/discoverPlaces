@@ -31,7 +31,7 @@ const routes: Routes = [
           },
           {
             path: "new",
-            loadChildren: "./offers/offers.module#NewOfferPageModule",
+            loadChildren: "./offers/new-offer/new-offer.module#NewOfferPageModule",
           },
           {
             path: "edit/:placeId",
@@ -41,7 +41,7 @@ const routes: Routes = [
           {
             path: ":placeId",
             loadChildren:
-              "./offers/offer-bookings/offer-bookings.module#OfferBookingsPage",
+              "./offers/offer-bookings/offer-bookings.module#OfferBookingsPageModule",
           },
         ],
       },
