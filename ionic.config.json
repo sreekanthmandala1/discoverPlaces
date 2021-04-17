@@ -1,5 +1,7 @@
 {
   "name": "discoverPlaces",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

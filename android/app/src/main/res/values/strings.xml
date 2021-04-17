@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">discoverplaces</string>
+    <string name="title_activity_main">discoverplaces</string>
+    <string name="package_name">com.sreekanthmandala.discoverplaces</string>
+    <string name="custom_url_scheme">com.sreekanthmandala.discoverplaces</string>
+</resources>
