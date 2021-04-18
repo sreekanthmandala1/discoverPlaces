@@ -10,7 +10,7 @@ import { Place } from '../../place.model';
   styleUrls: ['./place-detail.page.scss'],
 })
 export class PlaceDetailPage implements OnInit {
-  place:Place;
+  place: Place;
   constructor(
     private router: Router,
     private navCtrl: NavController,
@@ -23,7 +23,7 @@ export class PlaceDetailPage implements OnInit {
     // this.router.navigateByUrl('/places/tabs/discover');
     // this.navCtrl.navigateBack('/places/tabs/discover');
     this.modalCtrl
-      .create({ component: CreateBookingComponent , componentProps:{selectedPlace:this.place}})
+      .create({ component: CreateBookingComponent })
       .then((modalEl) => {
         modalEl.present();
       });
