@@ -1,5 +1,7 @@
+import { ModalController } from '@ionic/angular';
 
 import { Component, Input, OnInit } from '@angular/core';
+import { Place } from 'src/app/places/place.model';
 
 @Component({
   selector: 'app-create-booking',
@@ -7,11 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./create-booking.component.scss'],
 })
 export class CreateBookingComponent implements OnInit {
-  
-  constructor() { }
+  @Input() selectedPlace: Place;
+  constructor(private modalCtrl: ModalController) {}
 
-  ngOnInit() {
-    
+  ngOnInit() {}
+
+  onCancel() {
+    this.modalCtrl.dismiss(null, 'cancel');
   }
-  
+
+  onBookPlace() {
+    this.modalCtrl.dismiss({message : 'this is a dummy message!'}, 'confirm');
+  }
 }
