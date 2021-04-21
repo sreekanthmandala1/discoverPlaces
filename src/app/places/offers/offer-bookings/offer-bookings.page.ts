@@ -20,6 +20,7 @@ export class OfferBookingsPage implements OnInit {
   ) {}
 
   ngOnInit() {
+    // tslint:disable-next-line: deprecation
     this.route.paramMap.subscribe(paramMap => {
       if (!paramMap.has('placeId')) {
         this.navCtrl.navigateBack('/places/tabs/offers');
