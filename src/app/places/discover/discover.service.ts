@@ -7,8 +7,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpConfigService {
 
-  // API path 
-  base_path = 'https://jsonplaceholder.typicode.com/photos';
+  // API path
+  // tslint:disable-next-line: variable-name
+  base_path = '';
 
   constructor(
     private http: HttpClient
